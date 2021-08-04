@@ -25,3 +25,9 @@ PBYTE FindPattern(LPCSTR pattern, LPCSTR mask) {
 		}
 	}
 }
+
+void Exemple()
+{
+       // Internal
+	auto UWORLD = FindPattern("\x48\x8B\x05\x00\x00\x00\x00\x4D\x8B\xC2", "xxx????xxx"); 
+}
