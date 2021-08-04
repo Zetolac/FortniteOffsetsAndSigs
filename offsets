@@ -1,0 +1,57 @@
+Offsets:
+uWorld: 0x99b5930
+GoObjects: 0x97d1d38
+
+
+Offsets:
+Engine/World/Levels 0x138
+Engine/World/PersistentLevel 0x30
+Engine/GameInstance/LocalPlayers 0x38
+Engine/Player/PlayerController 0x30
+Engine/World/OwningGameInstance 0x180
+Engine/Controller/ControlRotation 0x288
+Engine/PlayerController/PlayerCameraManager 0x2B8
+Engine/PlayerController/AcknowledgedPawn 0x2A0
+Engine/Pawn/PlayerState 0x240
+Engine/Actor/RootComponent 0x130
+Engine/Character/Mesh 0x280
+Engine/SceneComponent/RelativeLocation 0x11C
+Engine/SceneComponent/ComponentVelocity 0x140
+Engine/StaticMeshComponent/StaticMesh 0x480
+Engine/SkinnedMeshComponent/CachedWorldSpaceBounds 0x618
+Engine/Actor/CustomTimeDilation 0x98
+Engine/Controller/RemoteViewPitch 0x232
+Fortnite/FortWeapon/LastFireTimeVerified 0x9C0
+Fortnite/FortWeapon/LastFireTime 0x9BC
+Fortnite/FortWeapon/IsReloading 0x2B1
+Fortnite/FortPawn/bIsDBNO 0x57E
+Fortnite/FortPawn/bIsDying 0x540
+Fortnite/FortPawn/ReviveFromDBNOTime 0x3430
+Fortnite/FortPlayerStateAthena/TeamIndex 0xED0
+Fortnite/FortPlayerStateAthena/SquadId 0x1054
+Fortnite/FortPickup/PrimaryPickupItemEntry 0x2A8
+Fortnite/FortItemDefinition/DisplayName 0x88
+Fortnite/FortItemDefinition/Tier 0x6C
+Fortnite/FortItemEntry/ItemDefinition 0x18
+Fortnite/FortPawn/CurrentWeapon 0x600
+Fortnite/FortWeapon/WeaponData 0x378
+Fortnite/FortWeapon/AmmoCount 0xA48
+Fortnite/FortWeapon/LastFireAbilityTime 0xC08
+Fortnite/FortWeaponItemDefinition/WeaponStatHandle 0x820
+Fortnite/FortProjectileAthena/FireStartLoc 0x880
+Fortnite/FortBaseWeaponStats/ReloadTime 0x10C
+Fortnite/FortBaseWeaponStats/ReloadScale 0x110
+Fortnite/FortBaseWeaponStats/ChargeDownTime 0x13C
+Fortnite/FortRangedWeaponStats/RecoilHoriz 0x210
+Fortnite/FortRangedWeaponStats/RecoilVert 0x200
+Fortnite/FortRangedWeaponStats/RecoilDownsightsMultiplier 0x22C
+Fortnite/BuildingContainer/bAlreadySearched 0xD71
+Fortnite/BuildingWeakSpot/bActive 0x250
+Fortnite/FortRangedWeaponStats/Spread 0x16C
+Fortnite/FortRangedWeaponStats/SpreadDownsights 0x170
+Fortnite/FortRangedWeaponStats/StandingStillSpreadMultiplier 0x174
+Fortnite/FortRangedWeaponStats/AthenaJumpingFallingSpreadMultiplier 0x17C
+Fortnite/FortRangedWeaponStats/AthenaCrouchingSpreadMultiplier 0x178
+Fortnite/FortRangedWeaponStats/AthenaSprintingSpreadMultiplier 0x180
+Fortnite/FortRangedWeaponStats/MinSpeedForSpreadMultiplier 0x184
+Fortnite/FortRangedWeaponStats/MaxSpeedForSpreadMultiplier 0x188
