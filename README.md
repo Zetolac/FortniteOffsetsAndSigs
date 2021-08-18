@@ -1,5 +1,5 @@
 # FortniteOffsetsAndSigs
-# > Fortnite Sigs &amp; Offsets 17.30
+# > Fortnite Sigs &amp; Offsets 17.40
 # > Need Help ? Discord : Zetolac#0001
 # > I don't have W2S for External :/
 
