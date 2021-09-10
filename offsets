@@ -1,6 +1,12 @@
 Offsets:
-uWorld: 0x9b6b2b0
-GoObjects: 0x9983a70
-FreeObject 0x153c7d6
-CalculateShot 0x5813646
-// 17.40
+uWorld: 0x9b53ac0
+GoObjects: 0x9969d80
+LineOfSightTo: 0xffffffff8f95fce2
+ProjectionWorldToScreen 0xffffffff8e89081e
+FortniteFree 0x16ad696
+CalculateShot 0x57c8a8e
+GetNameByIndex 0xffffffff8a1c177b
+GetBoneMatrix 0xffffffff917c1fc5
+CalculateSpread 0xffffffff936d0da4
+SpreadCaller 0x25842840
+// 17.50
