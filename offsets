@@ -9,4 +9,9 @@ GetNameByIndex: 0xffffffff8a0e240f
 GetBoneMatrix: 0xffffffff9183a1eb
 CalculateSpread: 0xffffffff9374b2aa
 SpreadCaller: 0x25595fb0
+
+Little Exploits:
+
+Aim On  Air : *(bool*)(LocalPawn + 0x3CB1) = true; // bADSWhileNotOnGroun
+
 // 18.00 | 2
