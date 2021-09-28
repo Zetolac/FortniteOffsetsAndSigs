@@ -1,17 +1,13 @@
 Offsets:
-uWorld: 0x9c23450
-GoObjects: 0x9a39cc0
-LineOfSightTo: 0xffffffff8f9d444e
-ProjectionWorldToScreen: 0xffffffff8e908dd6
-FortniteFree: 0x14bb1b6
-CalculateShot: 0x5845ed6
-GetNameByIndex: 0xffffffff8a0e240f
-GetBoneMatrix: 0xffffffff9183a1eb
-CalculateSpread: 0xffffffff9374b2aa
-SpreadCaller: 0x25595fb0
+uWorld: 0x9ca73b0
+GoObjects: 0xa0a26c4
+LineOfSightTo: 0xffffffff8fb590df
+ProjectionWorldToScreen: 0xffffffff8e99b632
+SpreadCaller: 0x25516cc4
 
-Little Exploits:
+Offsets Changed:
+GameInstance:  0x188
+Levels:  0x140
 
-Aim On  Air : *(bool*)(LocalPawn + 0x3CB1) = true; // bADSWhileNotOnGroun
 
-// 18.00 | 2
+// 18.10 
