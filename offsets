@@ -1,9 +1,7 @@
 Offsets:
 uWorld: 0x9ca73b0
-GoObjects: 0xa0a26c4
-LineOfSightTo: 0xffffffff8fb590df
-ProjectionWorldToScreen: 0xffffffff8e99b632
-SpreadCaller: 0x25516cc4
+GoObjects: 0x9ab9848
+
 
 Offsets Changed:
 GameInstance:  0x188
