@@ -1,11 +1,10 @@
 Offsets:
-uWorld: 0x9ca73b0
-GoObjects: 0x9ab9848
+uWorld: 0x9df4ce0
+GoObjects: 0x9c08558
 
-
-Offsets Changed:
+:
 GameInstance:  0x188
 Levels:  0x140
+TeamIndex:  0xED8
 
-
-// 18.10 
+// 18.30
