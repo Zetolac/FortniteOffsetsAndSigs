@@ -5,6 +5,6 @@ GoObjects: 0x9c08558
 :
 GameInstance:  0x188
 Levels:  0x140
-TeamIndex:  0xED8
+TeamIndex 0xEE0
 
 // 18.30
