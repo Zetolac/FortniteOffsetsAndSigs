@@ -1,11 +1,12 @@
-// 18.30
+// 11.20.21
+
 Offsets:
-uWorld: 0x9df4ce0
-GoObjects: 0x9c08558
+uWorld: 0x9eb0360
+GoObjects: 0x9cc1278
 
 :
 GameInstance:  0x188
 Levels:  0x140
-TeamIndex 0xEE0
+TeamIndex 0xF28
 
-// 18.30
+// 11.20.21
