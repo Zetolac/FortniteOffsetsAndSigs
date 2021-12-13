@@ -1,12 +1,9 @@
-// 11.20.21
+#define Uworld_offset 0xB731340
 
-Offsets:
-uWorld: 0x9eb0360
-GoObjects: 0x9cc1278
-
-:
-GameInstance:  0x188
-Levels:  0x140
-TeamIndex 0xF28
-
-// 11.20.21
+#define GameInstance_offset 0x190
+#define PlayerState_offset 0x238
+#define LocalPawn_offset 0x2A8
+#define TeamIndex_offset 0xF28
+#define Levels_offset 0x148
+#define BoneAray_offset 0x488
+#define LocalPlayers_offset 0x38
