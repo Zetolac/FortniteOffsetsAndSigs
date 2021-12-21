@@ -1,4 +1,4 @@
 # FortniteOffsetsAndSigs
-# > Fortnite Sigs &amp; Offsets 18.40
-# > Need Help ? Join Discord : https://discord.gg/78FQnFRsvB
+# > Fortnite Sigs &amp; Offsets 19.01
+# > Need Help ? Join Discord : https://discord.gg/Fd6VxJjux5
 
