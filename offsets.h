@@ -1,18 +1,18 @@
 
-// GetBoneIndex External
+// GetBoneIndex
 FTransform GetBoneIndex(DWORD_PTR mesh, int index)
 {
     DWORD_PTR bonearray;
-    bonearray = read<DWORD_PTR>(DriverHandle, processID, mesh + 0x4A8);
+    bonearray = read<DWORD_PTR>(mesh + 0x4A8);
 
     if (bonearray == NULL)
     {
-        bonearray = read<DWORD_PTR>(DriverHandle, processID, mesh + 0x4A8 + 0x8);
+        bonearray = read<DWORD_PTR>(mesh + 0x4A8 + 0x8);
     }
-    return  read<FTransform>(DriverHandle, processID, bonearray + (index * 0x30));
+    return  read<FTransform>(bonearray + (index * 0x30));
 }
 
-// GetBoneWithRotation External
+// GetBoneWithRotation
 Vector3 GetBoneWithRotation(DWORD_PTR mesh, int id)
 {
 	FTransform bone = GetBoneIndex(mesh, id);
@@ -24,14 +24,14 @@ Vector3 GetBoneWithRotation(DWORD_PTR mesh, int id)
 	return Vector3(Matrix._41, Matrix._42, Matrix._43);
 }
 
-#define UWORLD 0xB78BC30
+#define UWORLD 0xb613240
 #define GameInstance_offset 0x190
 #define PlayerState_offset 0x238
-#define LocalPawn_offset 0x2A8
-#define TeamIndex_offset 0xF28
+#define LocalPawn_offset 0x2B0
+#define TeamIndex_offset 0xF50
 #define Levels_offset 0x148
-#define BoneAray_offset 0x488
 #define LocalPlayers_offset 0x38 
+#define RootComponent 0x138
 
 //Bones ID
 Vector3 vHeadBoneOut = ProjectWorldToScreen(GetBoneWithRotation(entity.mesh, 68));
