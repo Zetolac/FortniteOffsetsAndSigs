@@ -32,6 +32,7 @@ Vector3 GetBoneWithRotation(DWORD_PTR mesh, int id)
 #define Levels_offset 0x148
 #define LocalPlayers_offset 0x38 
 #define RootComponent 0x138
+#define Mesh 0x288
 
 //Bones ID
 Vector3 vHeadBoneOut = ProjectWorldToScreen(GetBoneWithRotation(entity.mesh, 68));
