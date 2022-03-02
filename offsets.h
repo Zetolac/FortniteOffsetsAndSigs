@@ -19,7 +19,7 @@ Vector3 GetBoneWithRotation(DWORD_PTR mesh, int id)
 	return Vector3(Matrix._41, Matrix._42, Matrix._43);
 }
 
-#define UWORLD 0xb978aa8
+#define UWORLD 0xB973aa8
 #define GameInstance_offset 0x190
 #define PlayerState_offset 0x240
 #define LocalPawn_offset 0x2B0
