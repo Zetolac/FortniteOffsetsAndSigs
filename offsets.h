@@ -1,9 +1,11 @@
-GWorld: 0xC446238
-FNamePool: 0xC483180
-UObjectArray: 0xC26E608
-GetNameByIndex: 0xE04400
-GetBoneMatrix: 0x15612FC
-ProjectWorldToScreen: 0x85486C4
+GWorld: 0xc445278
+FNamePool: 0xc4821c0
+UObjectArray: 0xc26d530
+GetNameByIndex: 0xdf6f10
+GetBoneMatrix: 0x14167c4
+ProjectWorldToScreen: 0x8548010
+Free: 0xdcc950
+
 
 OFFSETS:
 BoneArray: 0x5B0
