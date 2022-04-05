@@ -16,7 +16,7 @@ RelativeLocation 0x128
 RelativeRotation 0x140
 TeamIndex 0x1020
 PlayerState 0x2A0
-Mesh 0x310
+Mesh 0x300
 VehicleState 0x1EA8
 
 VTABLE: // MAYBE WRONG
