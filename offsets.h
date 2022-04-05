@@ -1,4 +1,5 @@
 GWorld: 0xc3ef7c8
+FNamePool: 0xC42D200
 UObjectArray: 0xc2406d8
 GetNameByIndex: 0xe0b970
 GetBoneMatrix: 0x14aee58
@@ -13,9 +14,10 @@ RootComp: 0x188
 AcknowledgedPawn 0x320
 RelativeLocation 0x128
 RelativeRotation 0x140
-TeamIndex 0x1018
+TeamIndex 0x1020
 PlayerState 0x2A0
 Mesh 0x310
+VehicleState 0x1EA8
 
 VTABLE: // MAYBE WRONG
 0x4B -> ProcessEvent index
