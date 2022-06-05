@@ -14,7 +14,7 @@ AcknowledgedPawn 0x310
 RelativeLocation 0x128
 RelativeRotation 0x140
 TeamIndex 0x1068
-Current Weapon 0x2F0
+CurrentWeapon 0x7F0
 PlayerState 0x290
 Mesh 0x2F0
 bIsDBNO 0x74A
