@@ -1,33 +1,107 @@
-GNames = 0xCCB6E80
-GOBjects = 0xCABA728
-GWorld = 0xCC65A08
-Free = 0x0DB3210
-GetBoneMatrix = 0x0FCF3A0
-
-OFFSETS:
-BoneArray: 0x590 | NOT SURE
-
-CompToWorld: 0x240
-GameInstance 0x1A8
-RootComp: 0x188
-AcknowledgedPawn 0x310
-RelativeLocation 0x128
-RelativeRotation 0x140
-TeamIndex 0x1068
-CurrentWeapon 0x7F0
-PlayerState 0x290
-Mesh 0x2F0
-bIsDBNO 0x74A
-bIsDying 0x6D8
-ReviveFromDBNOTime 0x3FC8
-bUseGravity(ud vehicle fly) 0x672
-
-VTABLE: // MAYBE WRONG
-0x4B -> ProcessEvent index
-0x350 -> PlayerCameraManager
-0x6F0 -> GetLastFrameCameraCachePOV
-0x6E8 -> GetCameraCachePOV
-0x798 -> GetCameraRotation
-0x7A0 -> GetCameraLocation
-0x790 -> GetPlayerViewpoint
-0x700 -> SetControlRotation
+#define GWorld 0xef005e0
+#define FNamePool 0xef22b40
+#define GetNameById 0x47a2364
+#define DecryptAnsi 0x2afc858
+ 
+#define ProjectWorldLocationToScreen 0x9cc7e7c
+ 
+__int64 __fastcall DecryptAnsi(unsigned __int16 *a1, _WORD *a2)
+{
+  _WORD *v2; // rdi
+  unsigned int v4; // ebx
+  __int64 result; // rax
+  unsigned int v6; // edx
+  unsigned int v7; // r8d
+ 
+  v2 = a2;
+  ((void (__fastcall *)(_WORD *, unsigned __int16 *, unsigned __int64))memcpy)(
+    a2,
+    a1 + 2,
+    2 * ((unsigned __int64)*a1 >> 6));
+  v4 = *a1 >> 6;
+  result = read<int>(base + 0xEE27DC0); // If not work try this: 0xEFE88D0
+  v6 = ((_DWORD)result << 8) | ((unsigned int)result >> 8);
+  v7 = (unsigned int)result >> 4;
+  if ( v4 )
+  {
+    result = v4;
+    do
+    {
+      v6 += v7;
+      *v2++ ^= v6;
+      --result;
+    }
+    while ( result );
+  }
+  return result;
+}
+void __fastcall DecryptWide(unsigned __int16 *a1, _BYTE *a2)
+{
+  _BYTE *v2; // rbx
+  unsigned int v4; // edi
+  unsigned int v5; // eax
+  int v6; // edx
+  unsigned int v7; // r8d
+  __int64 v8; // rax
+ 
+  v2 = a2;
+  ((void (__fastcall *)(_BYTE *, unsigned __int16 *, unsigned __int64))memcpy)(a2, a1 + 2, (unsigned __int64)*a1 >> 6);
+  v4 = *a1 >> 6;
+  v5 = read<int>(base + 0xEE27DC0); // If not work try this: 0xEFE88D0
+  v6 = (v5 << 8) | (v5 >> 8);
+  v7 = v5 >> 4;
+  if ( v4 )
+  {
+    v8 = v4;
+    do
+    {
+      v6 += v7;
+      *v2++ ^= v6;
+      --v8;
+    }
+    while ( v8 );
+  }
+}
+namespace WorldOffsets
+{
+    DWORD PersitentLevel = 0x30;
+    DWORD GameInstance = 0x1b8;
+};
+namespace ActorOffsets
+{
+    DWORD RootComponent = 0x190;
+    DWORD PlayerState = 0x2a8; //Can be Wrong
+    DWORD Mesh = 0x310;
+};
+namespace PlayerControllerOffsets
+{
+    DWORD AcknowledgedPawn = 0x330;
+    DWORD PlayerCameraManager = 0x340;
+    DWORD LocalPlayerCachedLODDistanceFactor = 0x38c;
+    DWORD GetControlRotation = 0x720; //vtable
+    DWORD SetControlRotation = 0x728; //vtable
+};
+namespace PlayerCameraManagerOffsets
+{
+    DWORD GetCameraCachePOV = 0x710; //vtable
+    DWORD GetLastFrameCameraCachePOV = 0x718; //vtable
+};
+namespace FortPawnOffsets
+{
+    DWORD CurrentVehicle = 0x2428;
+    DWORD CurrentWeapon = 0x8f8;
+    DWORD ReviveFromDBNOTime = 0x44a0;
+};
+namespace PlayerStateOffsets
+{
+    
+};
+namespace MeshAndUSceneComponentOffsets
+{
+    DWORD ComponentToWorld = 0x240;
+    DWORD BoneArray = 0x5e8;
+};
+namespace LocalPlayerOffsets
+{
+    DWORD ViewStates = 0xD0;
+};
