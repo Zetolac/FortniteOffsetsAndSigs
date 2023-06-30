@@ -9,7 +9,7 @@ struct CamewaDescwipsion
 CamewaDescwipsion GetViewPoint()
 {
 	char v1; // r8
-	CamewaDescwipsion ViewPoint = Read<CamewaDescwipsion>(base_address + 0xf0d7a50);
+	CamewaDescwipsion ViewPoint = Read<CamewaDescwipsion>(base_address + 0xe9ad420);
 	BYTE* v2 = (BYTE*)&ViewPoint;
 	int i; // edx
 	__int64 result; // rax
@@ -25,13 +25,41 @@ CamewaDescwipsion GetViewPoint()
  
 	
 
-#define GWorld 0xf1add68
-#define FNamePool 0xf226880
-#define GetNameById 0xce7a60
-#define DecryptAnsi 0x3022da8
-#define ProjectWorldLocationToScreen 0x78c5f84
-#define EncryptedViewPoint 0xf0d7a50
+#define GWorld 0xea84a78
+#define FNamePool 0xeb03740
+#define GetNameById 0xcaea9c
+#define DecryptAnsi 0x303cbe0
+#define ProjectWorldLocationToScreen 0x775ad9c
+#define EncryptedViewPoint 0xe9ad420
 
-#define BoneArray 0x600
-#define IsBoneCached 0x648
-#define ComponentToWorld 0x240
+namespace WorldOffsets
+{
+    DWORD PersitentLevel = 0x30;
+    DWORD GameInstance = 0x1b8;
+};
+namespace ActorOffsets
+{
+    DWORD PlayerState = 0x2a8; //Can be Wrong
+    DWORD Mesh = 0x310;
+};
+namespace PlayerControllerOffsets
+{
+    DWORD AcknowledgedPawn = 0x330;
+    DWORD PlayerCameraManager = 0x340;
+    DWORD RotationInput = 0x518;
+};
+namespace FortPawnOffsets
+{
+    DWORD CurrentWeapon = 0x948;
+    DWORD ReviveFromDBNOTime = 0x4698;
+};
+namespace PlayerStateOffsets
+{
+    DWORD TeamIndex = 0x10c8; 
+};
+namespace MeshAndUSceneComponentOffsets
+{
+    DWORD ComponentToWorld = 0x240;
+    DWORD BoneArray = 0x600;
+    DWORD IsCached = 0x648;
+};
