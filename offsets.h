@@ -1,8 +1,8 @@
-#define GWorld 0xe762638
+#define GWorld 0x11781328
 namespace WorldOffsets
 {
     DWORD PersitentLevel = 0x30;
-    DWORD GameInstance = 0x1b8;
+    DWORD GameInstance = 0x1d0;
 };
 namespace ActorOffsets
 {
@@ -15,13 +15,13 @@ namespace PlayerControllerOffsets
 };
 namespace FortPawnOffsets
 {
-    DWORD CurrentWeapon = 0x948;
-    DWORD ReviveFromDBNOTime = 0x4af8;
+    DWORD CurrentWeapon = 0xa20;
+    DWORD ReviveFromDBNOTime = 0x4ae8;
 };
 namespace MeshAndUSceneComponentOffsets
 {
-    DWORD ComponentToWorld = 0x240;
-    DWORD BoneArray = 0x600;
-    DWORD IsCached = 0x648;
+    DWORD ComponentToWorld = 0x230;
+    DWORD BoneArray = 0x608;
+    DWORD IsCached = 0x650;
 };
 
